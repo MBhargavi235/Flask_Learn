@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+<title>{% block title %}user page{% endblock %}</title>
+{% block content %}
+<h1>This is a user page</h1>
+<form action="/register" method="post">
+    <input type="text" name="username" placeholder="username"/>
+    <input type="password" name="password" placeholder="password"/>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
